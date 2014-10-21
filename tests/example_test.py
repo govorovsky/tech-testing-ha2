@@ -35,12 +35,7 @@ class ExampleTest(unittest.TestCase):
         auth_form.submit()
 
     def tearDown(self):
-        import time
-
-        # time.sleep(15)
-
         self.driver.quit()
-        # pass
 
     def test_create_page_login_ok(self):
         create_page = CreatePage(self.driver)
